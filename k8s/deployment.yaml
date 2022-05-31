@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:salaryPredictionv2
+  name: salaryPredictionv2
 spec:
   replicas: 1
   selector:
