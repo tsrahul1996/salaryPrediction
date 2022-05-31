@@ -18,5 +18,6 @@ def predict_survival():
     prediction = model.predict([[int(experience)]])
     return "the predicted value is" + str(prediction)
 
+
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=8080)
