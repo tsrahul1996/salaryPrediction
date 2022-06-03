@@ -15,4 +15,13 @@ mind = LinearRegression()
 
 mind.fit(X_train, y_train)
 
+# printing the model name and accuracy !!!!!
+print("Model name: ", model)
+print("Model score : " + str(model.score(X_test, y_test) * 100))
+print("R2 score : ", r2_score(y_test, y_pred))
+print("MSE : ", mean_squared_error(y_test, y_pred))
+print("MAE : ", mean_absolute_error(y_test, y_pred))
+print("-------------------------------------------------------------")
+
 dump(mind,"salaryModel.pkl")
+
